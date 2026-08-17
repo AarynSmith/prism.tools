@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SQL Formatter - Prism.Tools</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql-formatter/12.2.4/sql-formatter.min.js"></script>
+  <script src="../lib/sql-formatter-12.2.4.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -156,14 +156,14 @@
       background: rgba(130, 170, 255, 0.2);
     }
     textarea {
-      flex: 1;
+	  min-height: 300px;
       padding: 0.875rem;
       background: #0a0a0f;
       border: none;
       color: #e4e4e7;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.8rem;
-      resize: none;
+	  resize: vertical;
       line-height: 1.6;
     }
     textarea:focus { outline: none; }
